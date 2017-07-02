@@ -10,6 +10,11 @@ import android.widget.ListView;
 import com.example.a1.klimov.R;
 import com.example.a1.klimov.view.adapter.MyAdapter;
 import com.example.a1.klimov.view.model.Lesson;
+import com.example.a1.klimov.view.view.firstLesson.LessonOneActivity;
+import com.example.a1.klimov.view.view.fiveLesson.LessonFiveActivity;
+import com.example.a1.klimov.view.view.fourthLesson.TraficLightActivity;
+import com.example.a1.klimov.view.view.secondLessReturn.SherlokAktivity;
+import com.example.a1.klimov.view.view.thirdLesson.OrientationActivity;
 
 import java.util.ArrayList;
 
@@ -17,8 +22,7 @@ public class MainActivity extends AppCompatActivity{
 
     private ArrayList<Lesson> lessons = new ArrayList<Lesson>();
     private MyAdapter myAdapter;
-    private LessonOneClass lessonOneClass;
-    private LessonSecondClass lessonSecondClass;
+    private LessonOneActivity lessonOneActivity;
 
 
     @Override
@@ -38,12 +42,24 @@ public class MainActivity extends AppCompatActivity{
                 Intent intent = null;
                 switch (position){
                     case 0:
-                        intent = new Intent(MainActivity.this, LessonOneClass.class);
+                        intent = new Intent(MainActivity.this, LessonOneActivity.class);
                         break;
                     case 1:
-                        intent = new Intent(MainActivity.this, LessonSecondClass.class);
+                        intent = new Intent(MainActivity.this, SherlokAktivity.class);
                         break;
+                    case 2:
+                        intent = new Intent(MainActivity.this, OrientationActivity.class);
+                        break;
+                    case 3:
+                        intent = new Intent(MainActivity.this, TraficLightActivity.class);
+                        break;
+                    case 4:
+                        intent = new Intent(MainActivity.this, LessonFiveActivity.class);
+                        break;
+                    case 5:
+                        intent = new Intent(MainActivity.this, OrientationActivity.class);
                 }
+
                 startActivity(intent);
             }
         });

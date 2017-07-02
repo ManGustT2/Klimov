@@ -16,6 +16,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.view.firstLesson.LessonOneActivity">
+
+        </activity>
+        <activity android:name=".view.view.fourthLesson.TraficLightActivity">
+
+        </activity>
+        <activity android:name=".view.view.fiveLesson.LessonFiveAboutActivity"
+            android:label="@string/about_title"
+            android:theme="@style/Theme.AppCompat.Dialog">
+        </activity>
+        <activity android:name=".view.view.fiveLesson.LessonFiveActivity">
+
+        </activity>
+        <activity android:name=".view.view.secondLessReturn.SherlokAktivity">
+
+        </activity>
+        <activity android:name=".view.view.secondLessReturn.ShooseActivity">
+
+        </activity>
+        <activity android:name=".view.view.thirdLesson.OrientationActivity">
+
+        </activity>
+
     </application>
 
 </manifest>
